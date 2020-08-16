@@ -1,0 +1,242 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 27684911200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launches URL for Guru Bank login",
+            "match": {
+              "location": "LoginPageSteps.user_launches_URL_for_Guru_Bank_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1262864800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Login Page",
+            "match": {
+              "location": "LoginPageSteps.user_is_on_Login_Page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "To test Invalid credentials for Guru Bank website",
+        "description": "",
+        "id": "to-test-login-functionality-of-the-guru99-bank-site;to-test-invalid-credentials-for-guru-bank-website",
+        "after": [
+          {
+            "result": {
+              "duration": 4806347900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageSteps.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11383000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login to Guru Bank page is displayed",
+            "match": {
+              "location": "LoginPageSteps.login_to_Guru_Bank_page_is_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 332737701,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters invalid login details as \"engr1234\" and \"pass1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "engr1234",
+                  "offset": 38
+                },
+                {
+                  "val": "pass1234",
+                  "offset": 53
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_invalid_login_details_as_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 544847100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginPageSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4050084700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "alert message as \"User or Password is not valid\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "User or Password is not valid",
+                  "offset": 18
+                }
+              ],
+              "location": "LoginPageSteps.alert_message_as_is_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 33704447600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user launches URL for Guru Bank login",
+            "match": {
+              "location": "LoginPageSteps.user_launches_URL_for_Guru_Bank_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16039499,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Login Page",
+            "match": {
+              "location": "LoginPageSteps.user_is_on_Login_Page()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "To test Valid credentials for Guru Bank website",
+        "description": "",
+        "id": "to-test-login-functionality-of-the-guru99-bank-site;to-test-valid-credentials-for-guru-bank-website",
+        "after": [
+          {
+            "result": {
+              "duration": 1048882400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginPageSteps.closeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20376700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "login to Guru Bank page is displayed",
+            "match": {
+              "location": "LoginPageSteps.login_to_Guru_Bank_page_is_displayed()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 632629300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters valid login details as \"mngr274020\" and \"aryvusy\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mngr274020",
+                  "offset": 36
+                },
+                {
+                  "val": "aryvusy",
+                  "offset": 53
+                }
+              ],
+              "location": "LoginPageSteps.user_enters_valid_login_details_as_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103308701,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginPageSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1584960099,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "home page is displayed for Manager",
+            "match": {
+              "location": "LoginPageSteps.home_page_is_displayed_for_Manager()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To test login functionality of the Guru99 Bank site",
+    "description": "",
+    "id": "to-test-login-functionality-of-the-guru99-bank-site",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

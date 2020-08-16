@@ -1,0 +1,21 @@
+Feature: To test login functionality of the Guru99 Bank site
+
+  Background:                                   [90m# Login.feature:3[0m
+    [32mGiven [0m[32muser launches URL for Guru Bank login[0m [90m# LoginPageSteps.user_launches_URL_for_Guru_Bank_login()[0m
+    [32mAnd [0m[32muser is on Login Page[0m                   [90m# LoginPageSteps.user_is_on_Login_Page()[0m
+
+  Scenario: To test Invalid credentials for Guru Bank website           [90m# Login.feature:7[0m
+    [32mGiven [0m[32mlogin to Guru Bank page is displayed[0m                          [90m# LoginPageSteps.login_to_Guru_Bank_page_is_displayed()[0m
+    [32mWhen [0m[32muser enters invalid login details as "[0m[32m[1mengr1234[0m[32m" and "[0m[32m[1mpass1234[0m[32m"[0m [90m# LoginPageSteps.user_enters_invalid_login_details_as_and(String,String)[0m
+    [32mAnd [0m[32mclick on login button[0m                                           [90m# LoginPageSteps.click_on_login_button()[0m
+    [32mThen [0m[32malert message as "[0m[32m[1mUser or Password is not valid[0m[32m" is displayed[0m  [90m# LoginPageSteps.alert_message_as_is_displayed(String)[0m
+
+  Background:                                   [90m# Login.feature:3[0m
+    [32mGiven [0m[32muser launches URL for Guru Bank login[0m [90m# LoginPageSteps.user_launches_URL_for_Guru_Bank_login()[0m
+    [32mAnd [0m[32muser is on Login Page[0m                   [90m# LoginPageSteps.user_is_on_Login_Page()[0m
+
+  Scenario: To test Valid credentials for Guru Bank website            [90m# Login.feature:13[0m
+    [32mGiven [0m[32mlogin to Guru Bank page is displayed[0m                         [90m# LoginPageSteps.login_to_Guru_Bank_page_is_displayed()[0m
+    [32mWhen [0m[32muser enters valid login details as "[0m[32m[1mmngr274020[0m[32m" and "[0m[32m[1maryvusy[0m[32m"[0m [90m# LoginPageSteps.user_enters_valid_login_details_as_and(String,String)[0m
+    [32mAnd [0m[32mclick on login button[0m                                          [90m# LoginPageSteps.click_on_login_button()[0m
+    [32mThen [0m[32mhome page is displayed for Manager[0m                            [90m# LoginPageSteps.home_page_is_displayed_for_Manager()[0m
